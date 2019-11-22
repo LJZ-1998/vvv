@@ -1,0 +1,4 @@
+ #分页配置
+  paginate: 2
+
+  plugins: [jekyll-paginate]
