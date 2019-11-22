@@ -1,0 +1,23 @@
+---
+layout: base
+---
+<center><h1>我的文章</h1></center>
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+{% for post in site.posts %}
+<!-- 日志 -->
+	<article id="contact">
+		<h2 class="major">{{post.title}}</h2>
+		<span class="image main"><img src="{{post.pic}}" alt="" /></span>
+		<p>{{post.subheading}}</p>
+	</article>	
+   
+ {% endfor %}	
+  <div class="clearfix">
+    	<center><a class="btn btn-primary float-left" href="index.html"> 上一页</a>
+    	<a class="btn btn-primary float-right" href="#">下一页</a></center>
+  	</div>
+	<!-- Footer -->
+	<!-- <footer id="footer">
+		<p class="copyright">&copy;感谢您来到<a href="#" title="我的博客" target="_blank">我的博客</a>！</p>
+	</footer> -->
